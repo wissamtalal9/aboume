@@ -108,10 +108,13 @@ alert('you are welcome ' + namee +  ' you are from ' + country + ', your main ma
 
 var questions = [
   ['what the element to do order list in html?', 'ol'],
-      ['what the element to do unorder list in html', 'ul'],
+      ['what the element to do unorder list in html?', 'ul'],
+      ['what the language can style sheet of my website?', 'css'],
+      ['where I can style sheet of my website', 'css'],
       ['where I can style sheet of my website', 'css']
+
     ],
-    correctAnswers = [],
+ correctAnswers = [],
     wrongAnswers = [];
 
     function quiz(quizQuestions) {
@@ -128,11 +131,14 @@ var questions = [
         }
       }
       
-      print('<h2>You got these questions right</h2>');
-      print(correctAnswers);
-      print('<h2>You got these questions wrong</h2>');
-      print(wrongAnswers);
-      
+  //    print('<h2>You got these questions right</h2>');
+    //  print(correctAnswers);
+  //    print('<h2>You got these questions wrong</h2>');
+    //  print(wrongAnswers);
+    alert('you answer Correct for these question '+correctAnswers);
+    console.log('correct answer '+correctAnswers.length);
+    alert('you answer incorrect for these question '+wrongAnswers);
+      console.log('wrong answer '+wrongAnswers.length);
       var printQuestionsRight = '<h3>You got ' + counter + ' questions right</h3>';
       print(printQuestionsRight);
     }
@@ -140,5 +146,23 @@ var questions = [
     function print(message) {
       document.write(message);
     }
-
     quiz(questions);
+
+    /*
+    Q 7
+function myfunction() {
+  let vafcode = ['html','css','js','python'.'C#'];
+  
+  for(let x = 0;x<6;x++){
+     let vafmessage = prompt('can you know what languages uses in web developer');
+    if(vafcode.includes(vafmessage.toLowerCase)){
+      alert('You are correct');
+      correct ++;
+      break;
+    }
+    else{
+      alert('Sorry, Try again');
+    }
+  }
+}
+myfunction() */

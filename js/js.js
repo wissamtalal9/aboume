@@ -1,40 +1,4 @@
 'use strict'
-var questions = [
-  ['what the element to do order list in html?', 'ol'],
-      ['what the element to do unorder list in html', 'ul'],
-      ['where I can style sheet of my website', 'css']
-    ],
-    correctAnswers = [],
-    wrongAnswers = [];
-
-    function quiz(quizQuestions) {
-      var counter = 0;
-      
-      for (var i = 0; i < questions.length; i++) {
-        var answer = prompt(questions[i][0]);
-        
-        if (answer === questions[i][1]) {
-          correctAnswers.push ([questions[i][0]]);
-          counter += 1;
-        } else {
-          wrongAnswers.push ([questions[i][0]]);
-        }
-      }
-      
-      print('<h2>You got these questions right</h2>');
-      print(correctAnswers);
-      print('<h2>You got these questions wrong</h2>');
-      print(wrongAnswers);
-      
-      var printQuestionsRight = '<h3>You got ' + counter + ' questions right</h3>';
-      print(printQuestionsRight);
-    }
-
-    function print(message) {
-      document.write(message);
-    }
-
-    quiz(questions);
 let namee = prompt('what is your name');
 namee.toLowerCase();
 alert('Welcome to my profile and good luck for u '+namee);
@@ -95,6 +59,8 @@ let counter = 0;
    console.log('he answer yes' );
 
  }
+
+ 
 /*let x = prompt('which of these element number is true code for order list item in html 1.li 2.ul 3.ol 4.td 5.tr 6.audio');
  let mvalue = ['li','ul','ol','td','tr','audio'];
 
@@ -125,14 +91,54 @@ let counter = 0;
 
 let country = prompt('where are you from' ) ;
 country.toLowerCase();
+console.log('your are from ' + country);
+
 let major = prompt('what is your main major' ) ;
 major.toLowerCase();
+console.log('your main major is  ' + major);
+
 let mark = prompt('what the mark you have it in your major' ) ; 
 mark.toLowerCase();
+console.log('you ger mark in your main major ' + mark);
+
 
 alert('you are welcome ' + namee +  ' you are from ' + country + ', your main major is : ' + major + ' and you get mark in your major : ' + mark ) 
 
 
-console.log('your are from ' + country);
-console.log('your main major is  ' + major);
-console.log('you ger mark in your main major ' + mark);
+
+var questions = [
+  ['what the element to do order list in html?', 'ol'],
+      ['what the element to do unorder list in html', 'ul'],
+      ['where I can style sheet of my website', 'css']
+    ],
+    correctAnswers = [],
+    wrongAnswers = [];
+
+    function quiz(quizQuestions) {
+      var counter = 0;
+      
+      for (var i = 0; i < questions.length; i++) {
+        var answer = prompt(questions[i][0]);
+        
+        if (answer === questions[i][1]) {
+          correctAnswers.push ([questions[i][0]]);
+          counter += 1;
+        } else {
+          wrongAnswers.push ([questions[i][0]]);
+        }
+      }
+      
+      print('<h2>You got these questions right</h2>');
+      print(correctAnswers);
+      print('<h2>You got these questions wrong</h2>');
+      print(wrongAnswers);
+      
+      var printQuestionsRight = '<h3>You got ' + counter + ' questions right</h3>';
+      print(printQuestionsRight);
+    }
+
+    function print(message) {
+      document.write(message);
+    }
+
+    quiz(questions);

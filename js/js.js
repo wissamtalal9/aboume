@@ -110,8 +110,8 @@ var questions = [
   ['what the element to do order list in html?', 'ol'],
       ['what the element to do unorder list in html?', 'ul'],
       ['what the language can style sheet of my website?', 'css'],
-      ['where I can style sheet of my website', 'css'],
-      ['where I can style sheet of my website', 'css']
+      ['what the language can ', 'css'],
+      ['what the language can add this type like, ', 'css']
 
     ],
  correctAnswers = [],

@@ -1,168 +1,112 @@
 'use strict'
-let namee = prompt('what is your name');
-namee.toLowerCase();
-alert('Welcome to my profile and good luck for u '+namee);
-console.log(' your name is : ' + namee) ;
+let first=prompt('what is your name?')
+
+alert('welcome to our website '+ first +' hopefully you will like our website!')
+alert('so me and you '+first+' can connect more i suggest we play a game!')
 
 
-let ex = prompt('please enter your experiance in your job');
+// score counter
+let scrCtr=0;
 
-if (ex<3){
-  alert('Your experiance is to low work of your self');
-  
-}
-else if(ex>=7){
- alert('Your experiance is very high good job');
-}
-else{
-  alert('Your experiance is '+ex);
-     console.log('he answer yes' );
-
-}
-let counter = 0;
- alert('now we want from u '+namee+' to answer question with yes/no or y/n ');
- let question = prompt('have you take it any course related in web programming');
-
- while(question !== 'yes' && question !=='y' && question !=='no' && question !=='n')
- {
-   question = prompt('please enter yes/no or y/n');
- }
- if(question ==='yes' || question=='y')
- {
-   counter++;
-   console.log('he answer yes' );
- }
- 
-
- let question2 = prompt('have you any experiance with languages web ');
-
- while(question2 !== 'yes' && question2 !=='y' && question2 !=='no' && question2 !=='n')
- {
-   question2 = prompt('please enter yes/no or y/n');
- }
- if(question2 ==='yes' || question2=='y')
- {
-   counter++;
-   console.log('he answer yes' );
+// question 1
+let qone=prompt('guess the following: "my favourite animals are Bears"   (yes/y no/n)'). toLowerCase();
+if (qone == 'yes' || qone == 'y'){
+    alert('correct, i love how big and strong they are!');
+    scrCtr++
+    // console.log(1st question guessed correctly)
+} else if (qone == 'no' || qone == 'n'){
+ alert('i actually love bears, good luck with the rest of the questions')}
+ else {
+alert('please only answer with yes or no');
+qone=prompt('guess the following: "my favourite animals are Bears"   (yes/y no/n)'). toLowerCase();
 
  }
 
- let question3 = prompt('are you ready to take any course in web developer ');
 
- while(question3 !== 'yes' && question3 !=='y' && question3 !=='no' && question3 !=='n')
- {
-   question3 = prompt('please enter yes/no or y/n');
- }
- if(question3 ==='yes' || question3=='y')
- {
-   counter++;
-   console.log('he answer yes' );
+// question 2
+let qtwo=prompt('guess the following: "i cheer manchester united as my soccer team"   (yes/y no/n)'). toLowerCase();
+if (qtwo == 'no' || qtwo == 'n'){
+    alert('I have always been a huge fan for Real madrid !');
+    scrCtr++
+    // console.log(2nd question guessed correctly)
+} else if(qtwo == 'yes' || qtwo == 'y'){
+    alert('i hate man Utd!  good luck with the rest of the questions')
+} else {
+    alert('please only answer with yes or no');
+    qtwo=prompt('guess the following: "i cheer manchester united as my soccer team"   (yes/y no/n)'). toLowerCase();}
 
- }
+// question 3
+let qthree=prompt('guess the following: "i live in japan"   (yes/y no/n)'). toLowerCase();
+if (qthree == 'no' || qthree == 'n'){
+    alert('jordan is where i live!');
+    scrCtr++
+    // console.log(3rd question guessed correctly)
+} else if(qthree == 'yes' || qthree == 'y'){
+    alert('soon.')
+} else {
+    alert('please only answer with yes or no');
+    qthree=prompt('guess the following: "i live in japan"   (yes/y no/n)'). toLowerCase();}
 
- 
-/*let x = prompt('which of these element number is true code for order list item in html 1.li 2.ul 3.ol 4.td 5.tr 6.audio');
- let mvalue = ['li','ul','ol','td','tr','audio'];
-
- for(let i = 0;i<=mvalue.length;i++){
-  console.log(mvalue[i]);
-   if(mvalue[i] === true)
-   {
-     console.log('we found it');
-   }
- } 
- if(mvalue[3] === x){
-   alert('you correct answer');
- }
-
-*/
-
-
-
- /*stringnumber = prompt('please enter your best language number');
- if(stringnumber===null || stringnumber != Number){
-  stringnumber = prompt('please enter your best language number');
- }
-//var stringa = ['python','c++','c#','php'];
-//switch (stringa){
-  //case
-//}
-*/
-
-let country = prompt('where are you from' ) ;
-country.toLowerCase();
-console.log('your are from ' + country);
-
-let major = prompt('what is your main major' ) ;
-major.toLowerCase();
-console.log('your main major is  ' + major);
-
-let mark = prompt('what the mark you have it in your major' ) ; 
-mark.toLowerCase();
-console.log('you ger mark in your main major ' + mark);
+// question 4
+let qfour=prompt('guess the following: "i drive a BMW"   (yes/y no/n)'). toLowerCase();
+if (qfour == 'no' || qfour == 'n'){
+    alert('I actually like compact cars thats why i have a Golf!');
+    scrCtr++
+    // console.log(4th question guessed correctly)
+} else if(qfour == 'yes' || qfour == 'y'){
+    alert('one day!')
+} else {
+    alert('please only answer with yes or no');
+    qfour=prompt('guess the following: "i drive a BMW"   (yes/y no/n)'). toLowerCase();}
 
 
-alert('you are welcome ' + namee +  ' you are from ' + country + ', your main major is : ' + major + ' and you get mark in your major : ' + mark ) 
+// question 5
+let qfive=prompt('guess the following: "spongebob is the greatest cartoon of all time"   (yes/y no/n)'). toLowerCase();
+if (qfive == 'yes' || qfive == 'y'){
+    alert('ayy ayy captain!');
+    scrCtr++
+    // console.log(5th question guessed correctly)
+} else if(qfive == 'no' || qfive == 'n'){
+    alert('im pretty sure it is!')
+} else {
+    alert('please only answer with yes or no');
+    qfive=prompt('guess the following: "spongebob is the greatest cartoon of all time"   (yes/y no/n)'). toLowerCase();}
 
 
-
-var questions = [
-  ['what the element to do order list in html?', 'ol'],
-      ['what the element to do unorder list in html?', 'ul'],
-      ['what the language can style sheet of my website?', 'css'],
-      ['what the language can ', 'css'],
-      ['what the language can add this type like, ', 'css']
-
-    ],
- correctAnswers = [],
-    wrongAnswers = [];
-
-    function quiz(quizQuestions) {
-      var counter = 0;
-      
-      for (var i = 0; i < questions.length; i++) {
-        var answer = prompt(questions[i][0]);
-        
-        if (answer === questions[i][1]) {
-          correctAnswers.push ([questions[i][0]]);
-          counter += 1;
-        } else {
-          wrongAnswers.push ([questions[i][0]]);
-        }
-      }
-      
-  //    print('<h2>You got these questions right</h2>');
-    //  print(correctAnswers);
-  //    print('<h2>You got these questions wrong</h2>');
-    //  print(wrongAnswers);
-    alert('you answer Correct for these question '+correctAnswers);
-    console.log('correct answer '+correctAnswers.length);
-    alert('you answer incorrect for these question '+wrongAnswers);
-      console.log('wrong answer '+wrongAnswers.length);
-      var printQuestionsRight = '<h3>You got ' + counter + ' questions right</h3>';
-      print(printQuestionsRight);
+// question 6
+let qsix=prompt('guess the number between 1-100')
+for (let i=0; i<3 ; i++){
+    if (qsix < '69'){
+        alert('too low');
+        qsix=prompt('guess the number between 1-100');
     }
-
-    function print(message) {
-      document.write(message);
+    else if(qsix>'69'){
+        alert('too high');
+        qsix=prompt('guess the number between 1-100');
     }
-    quiz(questions);
-
-    /*
-    Q 7
-function myfunction() {
-  let vafcode = ['html','css','js','python'.'C#'];
-  
-  for(let x = 0;x<6;x++){
-     let vafmessage = prompt('can you know what languages uses in web developer');
-    if(vafcode.includes(vafmessage.toLowerCase)){
-      alert('You are correct');
-      correct ++;
-      break;
+    else if (qsix == '69'){
+        alert('well done');
+        scrCtr++;
+        break;
     }
-    else{
-      alert('Sorry, Try again');
-    }
-  }
 }
-myfunction() */
+
+
+// question 7
+let box=['c','c','c','c','r','c','c','c','r','c','c','c','r','c','c','c','r','c','c','c'];
+let qseven=prompt('in a mystery box with 20 items in it can you find one of the 4 bunnies? enter 1-20')
+for (let k=0; k<5 ; k++){
+   
+    if (box[qseven] == 'r'){
+        alert('you found the rabbit!');
+        scrCtr++;
+        break;
+    }
+    else if (box[qseven] == 'c'){
+        alert('nope thats a carrot');
+        qseven=prompt('in a mystery box with 20 items in it can you find one of the 4 bunnies? enter 1-20')
+    }}
+
+
+alert(`${first} you scored ${scrCtr} out of 7`)
+alert('thank you '+ first+' for using our website hopefully you will have a wonderful day today and we cant wait to see you again!')

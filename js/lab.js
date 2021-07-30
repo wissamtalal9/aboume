@@ -10,60 +10,47 @@ let correct = 0;
 
 function question1(){
   let childhood = prompt('Did I grow up in Seattle?');
-  if(childhood.toLowerCase() === 'no' || childhood.toLowerCase() === 'n' ){
+  if(childhood.toLowerCase() === 'no'){
     alert('You are correct');
     correct++;
-  } else if (childhood.toLowerCase() === 'yes' || childhood.toLowerCase() === 'y'){
+  }else{
     alert('You are incorrect');
-  }
-else {
-  alert('please answer with yes or no');
-  childhood = prompt('Did I grow up in Seattle?');
-}}
+  }}
 
 question1();
 
 function question2(){
   let job = prompt('Have I worked in tech before?');
-  if(job.toUpperCase() === 'NO' || job.toUpperCase() === 'N'){
+  if(job.toUpperCase() === 'NO'){
     alert('You are correct');
     correct++;
-  }else if (job.toUpperCase() === 'yes' || job.toUpperCase() === 'y'){
+  }else{
     alert('You are incorrect');
-  }
-else {alert('please answer with yes or no');
-job = prompt('Have I worked in tech before?');
-}}
+  }}
 
 question2();
 
 
 function question3(){
   let age = prompt('Am I 26 years of age?');
-  if(age.toLowerCase() === 'yes' || age.toLowerCase() === 'y'){
+  if(age.toLowerCase() === 'yes'){
     alert('You are correct');
     correct++;
-  } else if (age.toLowerCase() === 'no' || age.toLowerCase() === 'n'){
+  }else{
     alert('You are incorrect');
-  }
-  else {alert('please answer with yes or no');
-  age = prompt('Am I 26 years of age?');
-}}
+  }}
 
 question3();
 
 
 function question4(){
   let school = prompt('Did I attend College?');
-  if(school.toLowerCase() === 'yes' || school.toLowerCase() === 'y'){
+  if(school.toLowerCase() === 'yes'){
     alert('You are correct');
     correct++;
-  }else if(school.toLowerCase() === 'no' || school.toLowerCase() === 'n'){
+  }else{
     alert('You are incorrect');
-  }
-  else {alert('please answer with yes or no');
-  school = prompt('Did I attend College?');
-}}
+  }}
 
 question4();
 
@@ -71,15 +58,12 @@ question4();
 
 function question5(){
   let employer = prompt('Is my ideal employer Lockheed?');
-  if(employer.toUpperCase() === 'YES' || employer.toUpperCase() === 'Y'){
+  if(employer.toUpperCase() === 'YES'){
     alert('You are correct');
     correct++;
-  } else if (employer.toUpperCase() === 'no' || employer.toUpperCase() === 'n'){
+  }else{
     alert('You are incorrect');
-  }
-  else {alert('please answer with yes or no');
-  employer = prompt('Is my ideal employer Lockheed?')
-}}
+  }}
 
 question5();
 
@@ -109,8 +93,8 @@ function question7(){
   let favSport = ['football', 'lacrosse', 'mma', 'soccer', 'boxing'];
 
   for(let x = 0; x < 6; x++ ){
-    let bigGuess = prompt('Can you guess one of my favorite sports?'). toLowerCase();
-    if (favSport.includes(bigGuess)){
+    let bigGuess = prompt('Can you guess one of my favorite sports?');
+    if (favSport.includes(bigGuess.toLowerCase)){
       alert('You are correct!');
       correct++;
       break;
@@ -122,4 +106,4 @@ function question7(){
 question7();
 
 
-alert('You got ' + correct + '/7')
+alert('You got ' + correct + '/7');
